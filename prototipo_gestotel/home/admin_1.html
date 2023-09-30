@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GESTOTEL@Administrador</title>
+    <link rel="stylesheet" type="text/css" href="styles_admin.css">
+</head>
+<body>
+    <header>
+        <h1>Panel de Administración</h1>
+        <p>Bienvenido, admin_1</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#gestion-habitaciones">Gestión de Habitaciones</a></li>
+            <li><a href="#usuarios">Usuarios</a></li>
+            <li><a href="#cerrar-sesion">Cerrar Sesión</a></li>
+        </ul>
+    </nav>
+
+    <section id="editar-habitacion">
+        <h2>Editar Habitación</h2>
+        <form action="#" method="POST">
+            <label for="nombre-habitacion">Nombre de la Habitación:</label>
+            <input type="text" id="nombre-habitacion" name="nombre-habitacion" value="Habitación Estándar">
+            <br>
+            <label for="descripcion-habitacion">Descripción:</label>
+            <textarea id="descripcion-habitacion" name="descripcion-habitacion" rows="4" cols="50">Una habitación cómoda con una cama doble y baño privado.</textarea>
+            <br>
+            <label for="precio-habitacion">Precio por Noche:</label>
+            <input type="text" id="precio-habitacion" name="precio-habitacion" value="$100">
+            <br>
+            <input type="submit" value="Guardar Cambios">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Hotel. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

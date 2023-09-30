@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GESTOTEL</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>GESTOTEL</h1>
+    </header>
+
+
+    <section id="login">
+        <div class="login-container">
+            <h2>Iniciar Sesión</h2>
+            <div action="login.php" method="POST">
+                <label for="usuario">Usuario:</label>
+                <input type="text" id="usuario" name="usuario" required>
+                <br>
+                <label for="contrasena">Contraseña:</label>
+                <input  type="password" id="contrasena" name="contrasena">
+                <br>
+                <div><a href="user_1.html"><input type="submit" value="Iniciar Sesión"></div>
+                <div>
+                    <p class="mb-0">No tienes cuenta? <a href="login_es.html" class="text-white-50 fw-bold">Registrate</a>
+                    </p>
+                  </div>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Hotel. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

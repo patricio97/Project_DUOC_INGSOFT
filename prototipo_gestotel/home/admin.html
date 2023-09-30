@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GESTOTEL@Administrador</title>
+    <link rel="stylesheet" type="text/css" href="styles_admin.css">
+</head>
+<body>
+    <header>
+        <h1>Panel de Administración</h1>
+    </header>
+
+    <section id="admin-login">
+        <div class="login-container">
+            <h2>Iniciar Sesión de Administrador</h2>
+            <form action="admin_login.php" method="POST">
+                <label for="admin-usuario">Usuario:</label>
+                <input type="text" id="admin-usuario" name="admin-usuario" required>
+                <br>
+                <label for="admin-contrasena">Contraseña:</label>
+                <input type="password" id="admin-contrasena" name="admin-contrasena" required>
+                <br>
+                <input type="submit" value="Iniciar Sesión">
+            </form>
+        </div>
+    </section>
+
+    <nav>
+        <ul>
+            <li><a href="#gestion-habitaciones">Gestión de Habitaciones</a></li>
+            <li><a href="#usuarios">Usuarios</a></li>
+        </ul>
+    </nav>
+
+    <section id="gestion-habitaciones">
+        <h2>Gestión de Habitaciones</h2>
+        <!-- Aquí puedes agregar formularios o información relacionada con la gestión de habitaciones -->
+    </section>
+
+    <section id="usuarios">
+        <h2>Usuarios</h2>
+        <!-- Aquí puedes agregar formularios o información relacionada con la gestión de usuarios -->
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Hotel. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GESTOTEL</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Hotel</h1>
+    </header>
+
+    <section id="language-selector">
+        <label for="idioma">Language:</label>
+        <select id="idioma">
+            <option value="es">English</option>
+            <option value="en">Spanish</option>
+        </select>
+    </section>
+
+    <section id="login">
+        <div class="login-container">
+            <h2>Login</h2>
+            <form action="login.php" method="POST">
+                <label for="usuario">Username:</label>
+                <input type="text" id="usuario" name="usuario" required>
+                <br>
+                <label for="contrasena">Password:</label>
+                <input type="password" id="contrasena" name="contrasena" required>
+                <br>
+                <input type="submit" value="Login">
+            </form>
+        </div>
+    </section>
+
+    <nav>
+        <ul>
+            <li><a href="#habitaciones">Rooms</a></li>
+            <li><a href="#contacto">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="habitaciones">
+        <h2>Rooms</h2>
+        <div class="habitacion">
+            <h3>Standard Room</h3>
+            <p>A comfortable room with a double bed and private bathroom.</p>
+        </div>
+        <div class="habitacion">
+            <h3>Luxury Suite</h3>
+            <p>A spacious suite with panoramic views and luxury amenities.</p>
+        </div>
+    </section>
+
+    <section id="contacto">
+        <h2>Contact</h2>
+        <p>Contact us at: <a href="mailto:info@hotel.com">info@hotel.com</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Hotel. All rights reserved.</p>
+    </footer>
+</body>
+</html>

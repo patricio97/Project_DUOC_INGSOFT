@@ -1,15 +1,44 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <link rel="stylesheet" type="text/css" href="styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hotel</title>
+    <title>GESTOTEL</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        /* Estilos para el botón de cerrar sesión */
+        #cerrar-sesion-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: #ff0000;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #cerrar-sesion-btn:hover {
+            background-color: #e60000;
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>Bienvenido al Hotel</h1>
+        <p>Sesión iniciada como user_1</p>
     </header>
+
+    <section id="language-selector">
+        <label for="idioma">Idioma:</label>
+        <select id="idioma">
+            <option value="es">Español</option>
+            <option value="en">Inglés</option>
+        </select>
+    </section>
+
+    <button id="cerrar-sesion-btn">Cerrar Sesión</button>
 
     <nav>
         <ul>
