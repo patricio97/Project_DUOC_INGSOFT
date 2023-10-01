@@ -8,52 +8,67 @@
 </head>
 <body>
     <header>
-        <h1>Welcome to the Hotel</h1>
+        <h1>GESTOTEL</h1>
+        
+        <style>
+            /* Styles for the Log In button */
+            #login-btn {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                background-color: #ff9800;
+                color: #fff;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 50px;
+                cursor: pointer;
+                text-decoration-line: none;
+                
+            }
+            a {
+                text-decoration: none;
+
+            }
+    
+            #login-btn:hover {
+                background-color: #e64a19;
+            }
+        </style>
+        
     </header>
 
-    <section id="language-selector">
-        <label for="idioma">Language:</label>
-        <select id="idioma">
-            <option value="es">English</option>
-            <option value="en">Spanish</option>
-        </select>
-    </section>
-
-    <section id="login">
-        <div class="login-container">
-            <h2>Login</h2>
-            <form action="login.php" method="POST">
-                <label for="usuario">Username:</label>
-                <input type="text" id="usuario" name="usuario" required>
-                <br>
-                <label for="contrasena">Password:</label>
-                <input type="password" id="contrasena" name="contrasena" required>
-                <br>
-                <input type="submit" value="Login">
-            </form>
-        </div>
-    </section>
-
+    <button id="login-btn"><a href="login_ing.html">Log In</a></button>
+    
     <nav>
         <ul>
-            <li><a href="#habitaciones">Rooms</a></li>
-            <li><a href="#contacto">Contact</a></li>
+            <li><a href="#rooms">Rooms</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
-    <section id="habitaciones">
+    <div>
+        <section id="language-selector">
+            <label for="language">Language:</label>
+            <select id="language" onchange="window.location.href=this.value">
+                <option value="file:///C:/Users/plago/OneDrive/Documentos/Project_DUOC_INGSOFT/prototipo_gestotel/home/home_ing.html">English</option>
+                <option value="file:///C:/Users/plago/OneDrive/Documentos/Project_DUOC_INGSOFT/prototipo_gestotel/home/home.html">Spanish</option>
+            </select>
+        </section>
+    </div>
+
+    <section id="rooms">
         <h2>Rooms</h2>
-        <div class="habitacion">
+        <div class="room">
             <h3>Standard Room</h3>
-            <p>A comfortable room with a double bed and private bathroom.</p>
+            <p>A comfortable room with a double bed and a private bathroom.</p>
         </div>
-        <div class="habitacion">
+        <div class="room">
             <h3>Luxury Suite</h3>
             <p>A spacious suite with panoramic views and luxury amenities.</p>
         </div>
     </section>
 
-    <section id="contacto">
+    <section id="contact">
         <h2>Contact</h2>
         <p>Contact us at: <a href="mailto:info@hotel.com">info@hotel.com</a></p>
     </section>

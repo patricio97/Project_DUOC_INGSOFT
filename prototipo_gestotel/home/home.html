@@ -9,23 +9,54 @@
 <body>
     <header>
         <h1>GESTOTEL</h1>
-        <div><input type="submit" value="Iniciar Sesión"></div>
+        
+        <style>
+            /* Estilos para el botón de cerrar sesión */
+            #Iniciar-sesion-btn {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                background-color: #ff9800;
+                color: #fff;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 50px;
+                cursor: pointer;
+                text-decoration-line: none;
+                
+            }
+            a {
+                text-decoration: none;
+
+            }
+    
+            #Iniciar-sesion-btn:hover {
+                background-color: #e64a19;
+            }
+        </style>
+        
     </header>
 
-    <section id="language-selector">
-        <label for="idioma">Idioma:</label>
-        <select id="idioma">
-            <option value="es">Español</option>
-            <option value="en"><a href="/home_ing.html">Inglés</a></option>
-        </select>
-    </section>
-
+    <button id="Iniciar-sesion-btn"><a href="login_es.html">Iniciar Sesión</a></button>
+    
     <nav>
         <ul>
             <li><a href="#habitaciones">Habitaciones</a></li>
             <li><a href="#contacto">Contacto</a></li>
         </ul>
     </nav>
+
+    <div>
+        <section id="language-selector">
+            <label for="idioma">Idioma:</label>
+            <select id="idioma" onchange="window.location.href=this.value">
+                <option value="file:///C:/Users/plago/OneDrive/Documentos/Project_DUOC_INGSOFT/prototipo_gestotel/home/home.html">Español</option>
+                <option value="file:///C:/Users/plago/OneDrive/Documentos/Project_DUOC_INGSOFT/prototipo_gestotel/home/home_ing.html">Inglés</option>
+            </select>
+        </section>
+    </div>
+
+    
 
     <section id="habitaciones">
         <h2>Habitaciones</h2>
