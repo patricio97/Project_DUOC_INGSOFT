@@ -9,7 +9,34 @@
 <body>
     <header>
         <h1>GESTOTEL</h1>
+        <style>
+            /* Styles for the Log In button */
+            #login-btn {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                background-color: #ff9800;
+                color: #fff;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 50px;
+                cursor: pointer;
+                text-decoration-line: none;
+                
+            }
+            a {
+                text-decoration: none;
+
+            }
+    
+            #login-btn:hover {
+                background-color: #e64a19;
+            }
+        </style>
+        
     </header>
+
+    <button id="login-btn"><a href="admin.html">Admin</a></button>
 
 
     <section id="login">
@@ -20,13 +47,13 @@
                 <input type="text" id="usuario" name="usuario" required>
                 <br>
                 <label for="contrasena">Contraseña:</label>
-                <input  type="password" id="contrasena" name="contrasena">
+                <input  type="password" id="contrasena" name="contrasena" required>
                 <br>
                 <div><a href="user_1.html"><input type="submit" value="Iniciar Sesión"></div>
                 <div>
                     <p class="mb-0">No tienes cuenta? <a href="login_es.html" class="text-white-50 fw-bold">Registrate</a>
                     </p>
-                  </div>
+                </div>
             </form>
         </div>
     </section>
